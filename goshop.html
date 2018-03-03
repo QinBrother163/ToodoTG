@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link type="text/css" rel="stylesheet" href="css/nav.css" />
+<link type="text/css" rel="stylesheet" href="css/goshop.css" />
+<link type="text/css" rel="stylesheet" href="css/dialog.css" />
+<title>电视团购</title>
+</head>
+
+<body>
+<!-- 遮罩层div-->
+<div id="mask"></div>
+<!-- 手机号码输出提示框div-->
+<div id="iphone-panel"><p style="font-size:20px; color:#5f5f5f;">提示：在线购买需要绑定您的手机，请在下方输入手机号码并点击提交。</p>
+    	<p><input type="text" id="iphone-text" disabled="disabled" style="font-size:20px; color:#000;"/></p>
+        <div id="iphone-btn" class="shop-btn-unfocus"><span style="font-size:22px; color:#FFFFFF";>提交</span></div>
+ </div>
+<!-- 键盘div-->
+<div id="keyboard-panel">
+	<input type="text" disabled="disabled" id="num-key" style="font-size:20px; color:#000;"/>
+    <div class="key-bigDiv">
+        <div class="key-div" id="key-div1"><span>1</span></div>
+        <div class="key-div" id="key-div2"><span>2</span></div>
+        <div class="key-div" id="key-div3"><span>3</span></div>
+        <div class="key-div" id="key-div4"><span>4</span></div>
+        <div class="key-div" id="key-div5"><span>5</span></div>
+        <div class="key-div" id="key-div6"><span>6</span></div>
+        <div class="key-div" id="key-div7"><span>7</span></div>
+        <div class="key-div" id="key-div8"><span>8</span></div>
+        <div class="key-div" id="key-div9"><span>9</span></div>
+        <div class="key-div" id="key-div10"><span>确认</span></div>
+        <div class="key-div" id="key-div11"><span>0</span></div>
+        <div class="key-div" id="key-div12"><span>删除</span></div>
+    </div>
+</div>
+<!-- 账单div-->
+<div id="bill-panel">
+	<div class="bill-list">
+    	<ul>
+        	<li>商品名称</li>
+            <li>单价</li>
+            <li>数量</li>
+            <li>总价</li>
+        </ul>
+   </div>
+	<div class="bill-contain">
+    	<ul>
+        	<li id="name">淼鑫猪肚鸡</li>
+            <li id="price">110</li>
+            <li id="num">1</li>
+            <li id="add">110</li>
+        </ul>
+        <div class="bill-three">
+        	<p class="money-p"><span>应付金额:</span><span id="money">110</span></p>
+            <div class="bill-btn shop-btn-unfocus" id="bill-btn"><p style="font-size:22px; color:#FFFFFF";>立刻购买</p></div>
+        </div>
+    </div>
+</div>
+<!-- 选择付款方式div-->
+<div id="pay-panel">
+	<div class="pay-panel-top"><span>支付方式</span></div>
+    <div class="pay-panel-mid"><p><span style="font-size:24px; color:#5f5f5f;">淼鑫猪肚鸡</span></p><p><span style="font-size:48px; color:#ff6c00;" id="payMoney">￥110</span></p></div>
+    <div class="pay-panel-btn">
+    	<div id="pay-btn0" class="pay-btn"><img src="images/buy/wei.png" /><p>微信支付</p></div>
+    	<div id="pay-btn1" class="pay-btn"><img src="images/buy/zhi.png" /><p>支付宝支付</p></div>
+    	<div id="pay-btn2" class="pay-btn"><img src="images/buy/guang.png" /><p>广电钱包支付</p></div>
+    </div>
+</div>
+<!-- 微信付款div-->
+<div id="wei-panel">
+	<div style="position:absolute; top:40px; left:70px; text-align:center;">
+    	<p style="font-size:18px; color:#5F5F5F; font-weight:bold;">请使用  <span style="font-size:18px; color:#ff6c00;">微信扫一扫</span></p>
+        <p style="font-size:18px; color:#5F5F5F; font-weight:bold;">扫描二维码支付</p>
+    </div>
+</div>
+<!-- 支付宝付款div-->
+<div id="zhi-panel">
+	<div style="position:absolute; top:40px; left:70px; text-align:center;">
+    	<p style="font-size:18px; color:#5F5F5F; font-weight:bold;">请使用  <span style="font-size:18px; color:#ff6c00;">支付宝扫一扫</span></p>
+        <p style="font-size:18px; color:#5F5F5F; font-weight:bold;">扫描二维码支付</p>
+    </div>
+</div>
+<!-- 付款成功div-->
+<div id="success-panel">
+	<p style="font-size:20px; color:#5f5f5f; font-weight:bold; position:absolute; top:220px; left:200px;">您的支付金额为:<span id="pay-money1" style="font-size:20px; color:#ff6c00">￥199</span></p>
+    <div id="back-btn" class="success-btn"><p>返回首页</p></div><div id="check-btn" class="success-btn" ><p>查看订单</p></div>
+
+</div>
+<!-- 付款失败div-->
+<div id="fail-panel">
+	<p style="font-size:20px; color:#5f5f5f; font-weight:bold; position:absolute; top:220px; left:200px;">您的支付金额为:<span id="pay-money2" style="font-size:20px; color:#ff6c00">￥199</span></p>
+    <div id="back-btn2" class="fail-btn"><p>返回首页</p></div><div id="repay-btn" class="fail-btn" ><p>重新支付</p></div>
+</div>
+
+
+<div id="index-logo" class="index-logo"><img src="images/index_LOGO.png" /></div>
+<div id="index-menu" class="index-menu">
+    <!--<div id="menu-btn0" class="menu-btn"><img src="images/icon/nav_0_00.png" /><p>搜索</p></div>-->
+    <!--<div id="menu-btn0" class="menu-btn"><img src="images/icon/nav_0_0.png" /><p>话费充值</p></div>-->
+    <div id="menu-btn0" class="menu-btn"><img src="images/icon/nav_1_0.png" /><p>个人中心</p></div>
+</div>
+<div id="index-nav" class="index-nav">
+    <ul>
+        <!--<li id="nav-01" class="nav-01 nav-activity">推荐</li>-->
+        <!--<li id="nav-02" class="nav-02">会员专享</li>-->
+        <!--<li id="nav-03" class="nav-03">美食</li>-->
+        <!--<li id="nav-04" class="nav-04">娱乐</li>-->
+        <!--<li id="nav-05" class="nav-05">游玩</li>-->
+        <!--<li id="nav-06" class="nav-06">亲子</li>-->
+        <!--<li id="nav-07" class="nav-07">丽人</li>-->
+        <!--<li id="nav-08" class="nav-08">运动</li>-->
+        <!--<li id="nav-09" class="nav-09">教育</li>-->
+        <!--<li id="nav-10" class="nav-10">购物</li>-->
+        <!--<li id="nav-11" class="nav-11">票务</li>-->
+        <!--<li id="nav-12" class="nav-12">魅力广东</li>-->
+        <!--<li id="nav-13" class="nav-13">更多</li>-->
+
+        <li id="nav-01" class="nav-01 nav-activity">推荐</li>
+        <li id="nav-02" class="nav-02">会员专享</li>
+        <li id="nav-03" class="nav-03">美食</li>
+        <!--<li id="nav-04" class="nav-04">娱乐</li>-->
+        <li id="nav-04" class="nav-04">游玩</li>
+        <!--<li id="nav-06" class="nav-06">亲子</li>-->
+        <!--<li id="nav-07" class="nav-07">丽人</li>-->
+        <!--<li id="nav-08" class="nav-08">运动</li>-->
+        <li id="nav-05" class="nav-05">教育</li>
+        <li id="nav-06" class="nav-06">购物</li>
+        <li id="nav-07" class="nav-07">票务</li>
+        <li id="nav-08" class="nav-08">魅力广东</li>
+        <li id="nav-09" class="nav-09">更多</li>
+    </ul>
+</div>
+
+<div id="shop-div-1" class="shop-div">
+	<div class="shop1-image-div">
+    	<ul id="show-ul" class="show-ul">
+        	<li class="activity-li oli"><img src="images/buy/1.jpg" /></li>
+            <li class="oli"><img src="images/buy/2.jpg" /></li>
+            <li class="oli"><img src="images/buy/3.jpg" /></li>
+        </ul>
+    </div>
+    
+    <div class="shop1-text-div">
+    	<p style="font-size:25px; color:#FFFFFF">淼鑫猪肚鸡</p>
+        <p><span style="font-size:25px; color:#ff6c00;">￥110</span>&nbsp;&nbsp;<span style="font-size:16px; color:#d7d7d7;">门面价￥154</span></p>
+        <p style="font-size:18px; color:#d7d7d7">2-3人餐，提供免费WiFi</p>
+        <p><div id="lost-btn" class="num-btn">-</div>
+        <!--<input class="num-text" id="num-text" disabled="disabled" type="text" value="1"/>--><div class="num-text" id="num-text">1</div>
+        <div id="add-btn" class="num-btn">+</div></p>
+         <div class="shop-btn shop-btn-unfocus" id="shop-btn"><p style="font-size:22px; color:#FFFFFF";>立刻购买</p></div>
+        
+    </div>
+</div>
+<div id="shop-div-2" class="shop-div">
+	<p><span>购买须知：</span>&nbsp;2014.12.20 至 2017.12.3（周末、法定节假日通用）,黄村店店内无WIFI,如需要开发票提前与商家沟通,超出套餐人数，需要到店付茶位费3元/位，调料费3元/位,团购用户不可同时享受商家其他优惠,酒水饮料等问题，请致电商家咨询，以商家反馈为准,如部分菜品因时令或其他不可抗因素导致无法提供，店内会用等价菜品替换，具体事宜请与店内协商。</p>
+    <p><span>商品详细：</span>&nbsp;胡椒猪肚鸡（￥88/1份），土豆片（￥12/1份），生菜（￥12/1份），火锅面（￥12/1份），萝卜片（￥8/1份），茶位费（￥3/3份），米饭（￥2/3份）。</p>
+    <p><span>商家介绍：</span>&nbsp;吃猪肚鸡之地，环境舒适。</p>
+    <p><span>网友评论：</span>&nbsp;团购两个人可以吃的很饱，恰巧又是朋友生日，很应景，吃的也还不错。猪肚鸡还有食疗的功效，刚好有点受风，在下着雨的夜晚，热热的吃上一顿，再好不过了。可能去的太晚了，其他客人都吃的很快，就我们留在最后，也没有服务员催促的紧迫，整体用餐良好，下次还去。</p>
+</div>
+</body>
+<script type="text/javascript" language="javascript" src="js/keycodes.js"></script>
+<script type="text/javascript" language="javascript" src="js/dialog.js"></script>
+<script type="text/javascript" language="javascript" src="js/goshop.js"></script>
+</html>

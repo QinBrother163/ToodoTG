@@ -1,0 +1,286 @@
+/* CSS Document */
+#mask{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:1280px;
+	height:720px;
+	background:#000;
+	opacity:0.3;
+	z-index:888;
+	display:none;	
+}
+#iphone-text{
+	border:1px solid #000;
+	background:#CCCCCC;
+	width:300px;
+	height:40px;	
+}
+#iphone-panel ,#keyboard-panel,#bill-panel,#pay-panel,#wei-panel,#zhi-panel,#success-panel,#fail-panel{
+	border:5px solid rgba(0,0,0,0.7);
+	z-index:995;
+	position:absolute;
+	background:#FFFFFF;
+	display:none;
+}
+#pay-panel ,#wei-panel,#zhi-panel,#success-panel,#fail-panel{
+	width:610px;
+	height:450px;
+	top:190px;
+	left:370px;
+}
+#success-panel{
+	background:url(../images/buy/success.png) no-repeat center;
+}
+#fail-panel{
+	background:url(../images/buy/fail.png) no-repeat center;
+}
+#wei-panel{
+	background:url(../images/buy/weixin.png);
+}
+#zhi-panel{
+	background:url(../images/buy/zhifubao.png);
+	
+}
+.pay-panel-top{
+	height:60px;
+	background:#FE6D00;
+	text-align:center;
+}
+.pay-panel-top span{
+	font-size:25px;
+	color:#ffffff;
+	line-height:2.2;
+}
+.pay-panel-mid{
+	height:140px;
+	text-align:center;
+}
+.pay-btn{
+	float:left;	
+	position:absolute;
+	width:146px;
+}
+.pay-panel-btn{
+	position:absolute;
+	left:30px;
+	top:220px;
+	text-align:center;
+}
+.pay-panel-btn p{
+	font-size:20px;
+	color:#5f5f5f;
+}
+#pay-btn0{
+	top:0;
+	left:0;
+}
+#pay-btn1{
+	top:0;
+	left:180px;
+}
+
+#pay-btn2{
+	top:0;
+	left:360px;
+}
+
+#bill-panel{
+	width:570px;
+	height:250px;
+	top:250px;
+	left:370px;
+}
+.bill-list{
+	width:570px;
+	height:60px;
+	background:#FE6D00;
+}
+.bill-list ul,.bill-contain  ul{
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+.bill-list ul li ,.bill-contain  ul li{
+	float:left;
+	width:130px;
+	text-align:center;
+	color:#FFFFFF;
+	font-size:20px;
+	line-height:3;
+}
+.bill-contain  ul li{
+	color:#5f5f5f;
+}
+.bill-three{
+	position:absolute;
+	left:380px;
+	top:110px;
+}
+.bill-btn{
+	position:absolute;
+	top:60px;
+	left:-15px;
+	text-align:center;
+	width:161px;
+	height:56px;
+}
+.bill-btn p{
+	margin-top:15px;
+}
+.money-p{
+	font-size:20px;
+	color:#5f5f5f;
+}
+
+#money{
+	font-size:20px;
+	color:#f66c00;
+}
+
+#iphone-panel{
+	width:570px;
+	height:250px;
+	top:250px;
+	left:370px;
+}
+#iphone-panel p{
+	margin:40px 40px;	
+}
+#iphone-btn{
+	position:absolute;
+	left:380px;
+	top:125px;
+	text-align:center;
+	width:161px;
+	height:56px;
+	line-height:2.5;	
+}
+
+#keyboard-panel{
+	left:500px;
+	top:180px;
+	width:300px;
+	height:450px;
+}
+
+#num-key{
+	width:250px;
+	margin:30px 25px;
+	height:40px;
+}
+
+.key-div{
+	width:75px;
+	height:75px;
+	text-align:center;
+	position:absolute;
+	background:url(../images/buy/key-unfocus.png);
+}
+.key-focus{
+	background:url(../images/buy/key-focus.png);
+}
+
+.key-div span{
+	font-size:40px;
+	color:#FFFFFF;
+	line-height:1.8;
+}
+
+#key-div10 span ,#key-div12 span{
+	font-size:24px;
+	color:#FFFFFF;
+	line-height:3.2;
+}
+.key-bigDiv{
+	position:absolute;
+	top:75px;
+	width:300px;
+	height:380px;
+}
+#key-div1{
+	top:20px;
+	left:25px;
+}
+#key-div2{
+	top:20px;
+	left:114px;
+}
+
+#key-div3{
+	top:20px;
+	left:206px;
+}
+
+#key-div4{
+	top:110px;
+	left:25px;
+}
+
+#key-div5{
+	top:110px;
+	left:114px;
+}
+
+#key-div6{
+	top:110px;
+	left:206px;
+}
+
+#key-div7{
+	top:200px;
+	left:25px;
+}
+
+#key-div8{
+	top:200px;
+	left:114px;
+}
+
+#key-div9{
+	top:200px;
+	left:206px;
+}
+
+#key-div10{
+	top:290px;
+	left:25px;
+}
+
+#key-div11{
+	top:290px;
+	left:114px;
+}
+
+#key-div12{
+	top:290px;
+	left:206px;
+}
+
+
+.success-btn ,.fail-btn{
+	font-size:20px;
+	color:#ffffff;
+	font-weight:bold;
+	position:absolute;
+	top:330px;
+	width:161px;
+	height:56px;
+	text-align:center;
+	background:url(../images/buy/btn-unselect.png) no-repeat center;
+}
+
+.success-btn p ,.fail-btn p{
+	margin-top:15px;
+}
+
+.success-btn-focus{
+	background:url(../images/buy/btn-select.png);
+}
+
+#back-btn ,#back-btn2{
+	left:80px;
+}
+#check-btn,#repay-btn{
+	left:360px;
+}

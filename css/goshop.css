@@ -1,0 +1,116 @@
+/* CSS Document */
+.shop-div{
+	position:absolute;
+	width:1158px;
+	background-color:rgba(0,0,0,0.2);
+}
+
+#shop-div-1{
+	left:57px;
+	top:180px;
+	height:202px;
+}
+
+#shop-div-2{
+	left:57px;
+	top:385px;
+	height:280px;
+}
+
+
+.shop1-image-div{
+	margin-top:20px;
+	margin-left:20px;
+	float:left;
+}
+
+#show-ul{
+	padding:0;
+	margin:0;
+	height:175px;
+	width:280px;
+	overflow:hidden;	
+}
+.oli{
+	height:162px;
+	display:none;
+}
+.activity-li{
+	display:block;
+}
+
+.show-ul img{
+	height:162px;
+}
+
+.shop1-text-div{
+	height:162px;
+	width:800px;
+	position:absolute;
+	left:320px;
+	top:15px;
+}
+.shop1-text-div p{
+	margin-top:3px;
+	line-height:1.2;
+}
+.num-btn ,.num-text{
+	display: inline-block;
+    width: 28px;
+    height: 26px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #999;
+	background:#F0F0F0;
+    border: 1px solid #e6e6e6;
+}
+.select-btn{
+	background:#FFC600;	
+}
+.unselect-btn{
+	background:#F0F0F0;
+}
+.num-text{
+	 width: 40px;
+     height: 26px;
+     color: #333;
+     border-left:0;
+     border-right:0;
+}
+
+
+.shop-btn{
+	position:absolute;
+	left:650px;
+	top:100px;
+	text-align:center;
+	background:url(../images/buy/btn-unselect.png) no-repeat;
+	width:161px;
+	height:56px;
+}
+
+.shop-btn p{
+	margin-top:15px;
+}
+
+.shop-btn-focus{
+	background:url(../images/buy/btn-select.png) no-repeat;
+}
+
+.shop-btn-unfocus{
+	background:url(../images/buy/btn-unselect.png) no-repeat;
+}
+#shop-div-2 p{
+	margin-left:20px;
+	margin-top:15px;
+	color:#FFFFFF;
+	font-size:16px;
+	line-height:1.5;
+}
+#shop-div-2 span{
+	color:#d7d7d7;
+	font-size:18px;
+}
+
+

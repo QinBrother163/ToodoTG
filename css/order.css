@@ -1,0 +1,19 @@
+.buy-btn{
+    position:absolute;
+    left:0px;
+    top:0px;
+    text-align:center;
+    background:url(../images/buy/btn-unselect.png) no-repeat;
+    width:161px;
+    height:56px;
+}
+.buy-btn p{
+    line-height: 11px;
+}
+.buy-btn-focus{
+    background:url(../images/buy/btn-select.png) no-repeat;
+}
+
+.buy-btn-unfocus{
+    background:url(../images/buy/btn-unselect.png) no-repeat;
+}

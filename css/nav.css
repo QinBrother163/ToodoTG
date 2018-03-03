@@ -1,0 +1,160 @@
+/* CSS Document */
+body{
+    width: 1280px;
+    height: 720px;
+    margin: 0;
+	background:url(../images/bg.jpg) no-repeat;
+	overflow:hidden;
+	font-family:'Microsoft YaHei';
+}
+.index-logo{
+	position:absolute;
+	left:70px;
+	top:25px;
+	height:70px;
+	width:120px;
+}
+
+.index-logo img{
+	width:120px;
+}
+
+.index-menu{
+	position:absolute;
+	left:1075px;
+	top:34px;
+	width:300px;
+}
+.menu-btn{
+	position:absolute;
+	width: 70px;
+    height: 100px;
+    top: 0;
+	left:0;
+    text-align: center;
+}
+
+.menu-btn p{
+	font-size: 16px;
+    font-family:'Microsoft YaHei';
+    color: #ffffff;
+}
+
+.menu-btn img{
+	width:36px;
+	height:36px;
+	
+}
+
+#menu-btn0{
+	left:80px;
+}
+
+#menu-btn2{
+	left:160px;
+}
+
+
+.index-nav{
+	position:absolute;
+	left:66px;
+	top:100px;
+	height:auto;
+	width:1170px;
+	font-size: 20px;
+    font-family:'Microsoft YaHei';
+    color: #aeaeae;
+}
+
+.index-nav ul{
+	margin-top: 20px;
+	list-style:none;
+}
+
+.index-nav ul li{
+	position:absolute;
+	line-height:40px;
+	width:auto;
+	float:left;
+	text-align:center;
+}
+
+.nav-activity{
+	/*background:url(../images/select.png) no-repeat center;*/
+	font-size: 26px;
+	color: #fff;
+	border-bottom: 2px solid #00dfff;
+	margin-left: -10px !important;
+}
+.nav-nofocus{
+	background:none;
+}
+.nav-toggle{
+	/*background:url(../images/select1.png) no-repeat center;*/
+	font-size: 26px;
+	color: #eee;
+	margin-left: -10px !important;
+	border-bottom: 0px solid #aeaeae;
+}
+#nav-01{
+	left:5px;
+}
+#nav-02{
+	left:130px;
+}
+#nav-03{
+	left:302px;
+}
+#nav-04{
+	left:431px;
+}
+#nav-05{
+	left:562px;
+}
+#nav-06{
+	left:697px;
+}
+#nav-07{
+	left:820px;
+}
+#nav-08{
+	left:947px;
+}
+#nav-09{
+	left:1111px;
+}
+/*#nav-10{*/
+	/*left:815px;*/
+/*}*/
+/*#nav-11{*/
+	/*left:905px;*/
+/*}*/
+/*#nav-12{*/
+	/*left:995px;*/
+/*}*/
+/*#nav-13{*/
+	/*left:1115px;*/
+/*}*/
+
+.contain{
+	position:absolute;	
+}
+
+#contain-div{
+	position:absolute;
+	left:65px;
+	top:190px;
+	width:1170px;
+	height:525px;
+}
+
+
+#contain-div img{
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+
+.img-focus{
+	border:3px solid #FFDE00;
+}

@@ -1,0 +1,95 @@
+/* CSS Document */
+#mask{
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:1280px;
+    height:720px;
+    background:#000;
+    opacity:0.3;
+    z-index:888;
+    display:block;
+}
+
+#contain-h1{
+    top: -162px;
+    left: 553px;
+    font-size: 28px;
+    color: #fff;
+}
+
+
+#contain-1201{
+    left:0px;
+    top:0px;
+}
+
+#contain-1202{
+    left:238px;
+    top:0px;
+}
+
+#contain-1203{
+    left:476px;
+    top:0px;
+}
+
+#contain-1204{
+    left:714px;
+    top:0px;
+}
+
+#contain-1205{
+    left:952px;
+    top:0px;
+}
+
+#contain-1206{
+    left:0px;
+    top:163px;
+}
+
+#contain-1207{
+    left:238px;
+    top:163px;
+}
+
+#contain-1208{
+    left:476px;
+    top:163px;
+}
+
+#contain-1209{
+    left:714px;
+    top:163px;
+}
+
+#contain-1210{
+    left:952px;
+    top:163px;
+}
+
+#contain-1211{
+    left:0px;
+    top:326px;
+}
+
+#contain-1212{
+    left:238px;
+    top:326px;
+}
+
+#contain-1213{
+    left:476px;
+    top:326px;
+}
+
+#contain-1214{
+    left:714px;
+    top:326px;
+}
+
+#contain-1215{
+    left:952px;
+    top:326px;
+}
